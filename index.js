@@ -13,6 +13,9 @@ app.get('/api/ramas', (req, res) => {
 // Ruta para crear rama
 app.post('/api/ramas', (req, res) => {
     const { nombre } = req.body;
+    if (!nombre) {
+        return res.status(400).send('El nombre es requerido');
+    }
     // Lógica para crear una nueva rama
     res.status(201).send(`Rama ${nombre} creada`);
 });
