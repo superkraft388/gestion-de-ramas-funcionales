@@ -1,6 +1,6 @@
 {
   "name": "gestion-de-ramas-funcionales",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Aplicación para gestionar ramas funcionales",
   "main": "index.js",
   "scripts": {
