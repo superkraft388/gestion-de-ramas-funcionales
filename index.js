@@ -7,7 +7,7 @@ app.use(express.json());
 // Ruta para obtener ramas
 app.get('/api/ramas', (req, res) => {
     // Lógica para obtener ramas
-    res.send('Lista de ramas');
+    res.json({ message: 'Lista de ramas' });
 });
 
 // Ruta para crear rama
